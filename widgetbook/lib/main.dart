@@ -20,6 +20,12 @@ class WidgetbookApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       themeMode: ThemeMode.light,
+      addons: [
+        ViewportAddon([
+          IosViewports.iPhone13,
+          AndroidViewports.samsungGalaxyS20,
+        ]),
+      ],
     );
   }
 }
