@@ -26,20 +26,6 @@
             "cwd": "widgetbook",
             "request": "launch",
             "type": "dart"
-        },
-        {
-            "name": "widgetbook (profile mode)",
-            "cwd": "widgetbook",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "widgetbook (release mode)",
-            "cwd": "widgetbook",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
         }
     ]
 }
