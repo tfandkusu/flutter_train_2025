@@ -22,9 +22,10 @@ class WidgetbookApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       addons: [
         ViewportAddon([
-          IosViewports.iPhone13,
           AndroidViewports.samsungGalaxyS20,
+          IosViewports.iPhone13,
         ]),
+        TextScaleAddon(),
       ],
     );
   }

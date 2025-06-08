@@ -27,8 +27,15 @@ class UserListItem extends StatelessWidget {
                 Text(
                   '${user.firstName} ${user.lastName}',
                   style: theme.textTheme.bodyLarge,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                Text(user.email, style: theme.textTheme.bodyMedium),
+                Text(
+                  user.email,
+                  style: theme.textTheme.bodyMedium,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ],
             ),
           ),
