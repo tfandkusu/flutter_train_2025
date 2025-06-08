@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_train_2025/domain/entity/user.dart';
+import 'package:gap/gap.dart';
 
 class UserListItem extends StatelessWidget {
   const UserListItem({super.key, required this.user});
@@ -19,7 +20,7 @@ class UserListItem extends StatelessWidget {
             height: 50,
             fit: BoxFit.cover,
           ),
-          const SizedBox(width: 16),
+          const Gap(16),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
