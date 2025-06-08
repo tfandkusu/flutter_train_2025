@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:dio/dio.dart';
 
 final _dio = Dio();
@@ -11,8 +10,9 @@ Future<Map<String, dynamic>> request({
 }) async {
   final baseUrl = 'https://reqres.in/api';
   final response = await _dio.get(
-    '$baseUrl/$path',
+    '$baseUrl$path',
     queryParameters: queryParameters,
+    options: Options(headers: headers),
   );
-  return jsonDecode(response.data);
+  return response.data;
 }
