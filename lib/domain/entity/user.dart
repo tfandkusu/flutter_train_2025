@@ -2,6 +2,7 @@ import 'package:flutter_train_2025/service/get_users/get_users_dto.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'user.freezed.dart';
+part 'user.g.dart';
 
 @freezed
 abstract class User with _$User {
@@ -22,4 +23,6 @@ abstract class User with _$User {
       avatarImageUrl: dto.avatar,
     );
   }
+
+  factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 }
