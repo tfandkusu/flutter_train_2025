@@ -12,8 +12,9 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:widgetbook/widgetbook.dart' as _i1;
 import 'package:widgetbook_workspace/component/initial_load_error.dart' as _i2;
+import 'package:widgetbook_workspace/component/post_error_dialog.dart' as _i3;
 import 'package:widgetbook_workspace/page/user_list/component/user_list_item.dart'
-    as _i3;
+    as _i4;
 
 final directories = <_i1.WidgetbookNode>[
   _i1.WidgetbookFolder(
@@ -24,6 +25,13 @@ final directories = <_i1.WidgetbookNode>[
         useCase: _i1.WidgetbookUseCase(
           name: 'InitialLoadError',
           builder: _i2.buildInitialLoadErrorUseCase,
+        ),
+      ),
+      _i1.WidgetbookLeafComponent(
+        name: 'PostErrorDialog',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'PostErrorDialog',
+          builder: _i3.buildPostErrorDialogUseCase,
         ),
       ),
     ],
@@ -41,7 +49,7 @@ final directories = <_i1.WidgetbookNode>[
                 name: 'UserListItem',
                 useCase: _i1.WidgetbookUseCase(
                   name: 'UserListItem',
-                  builder: _i3.buildUserListUseCase,
+                  builder: _i4.buildUserListUseCase,
                 ),
               ),
             ],
